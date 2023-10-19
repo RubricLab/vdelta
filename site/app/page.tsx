@@ -1,5 +1,6 @@
 import {ContactButton, Header} from '@rubriclab/ui'
 import {Metadata} from 'next'
+import Link from 'next/link'
 import {DEFAULT_META} from '../constants/metadata'
 
 export const metadata: Metadata = {
@@ -12,10 +13,15 @@ export default async function Home() {
 			{/* Section: Hero */}
 			<div className='flex min-h-screen max-w-3xl flex-col justify-end gap-3 pb-5'>
 				<Header text={'Welcome to v𝚫'} />
-				<p className='text-3xl font-extralight sm:text-6xl md:text-6xl'>
+				<p className='mb-9 text-3xl font-extralight sm:text-6xl md:text-5xl'>
 					Visualize your Vercel build logs.
 				</p>
-				<p className='text-gray-500'>(Not affiliated with Vercel)</p>
+				<Link href='https://chrome.google.com/webstore/detail/eopaemjhhlglgcdeeincohklolojdock/preview'>
+					<button className='rounded-md bg-black px-6 py-3 text-white opacity-100'>
+						Install on Chrome
+					</button>
+				</Link>
+				<p className='text-sm text-gray-500'>(Not affiliated with Vercel)</p>
 			</div>
 
 			{/* Section */}
