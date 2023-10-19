@@ -1,8 +1,6 @@
 import {ImageResponse} from 'next/server'
-import colors from 'tailwindcss/colors'
 import BackgroundGrid from '../components/BackgroundGrid'
 import {FONTS} from '../constants/fonts'
-import config from '../tailwind.config'
 
 export const runtime = 'edge'
 
@@ -25,7 +23,7 @@ export default async function Image({params}: Props) {
 			<div
 				style={{
 					alignItems: 'center',
-					background: config.theme.colors['off-white'],
+					background: 'black',
 					display: 'flex',
 					flexDirection: 'column',
 					height: '100%',
@@ -40,8 +38,8 @@ export default async function Image({params}: Props) {
 						width: size.width
 					}}
 				/>
-				<div style={{fontSize: 128}}>My Cool App</div>
-				<div style={{color: colors['orange']['700'], fontSize: 48}}>Built with Rubric.</div>
+				<div style={{fontSize: 128}}>v𝚫</div>
+				<div style={{color: 'white', fontSize: 48}}>Built with Rubric.</div>
 			</div>
 		),
 		{

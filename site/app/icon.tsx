@@ -1,5 +1,4 @@
 import {ImageResponse} from 'next/server'
-import colors from 'tailwindcss/colors'
 import {FONTS} from '../constants/fonts'
 import config from '../tailwind.config'
 
@@ -19,8 +18,8 @@ export default async function Icon() {
 			<div
 				style={{
 					alignItems: 'center',
-					background: colors['orange']['700'] || 'orange',
-					color: offWhite,
+					background: 'black',
+					color: 'white',
 					display: 'flex',
 					fontSize: 28,
 					height: '100%',
@@ -28,7 +27,7 @@ export default async function Icon() {
 					paddingBottom: '5px',
 					width: '100%'
 				}}>
-				R
+				v𝚫
 			</div>
 		),
 		{

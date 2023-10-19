@@ -1,7 +1,8 @@
 import {ToastProvider} from '@rubriclab/ui'
+import {Metadata} from 'next'
 import localFont from 'next/font/local'
 import BackgroundGrid from '../components/BackgroundGrid'
-import {META} from '../constants/metadata'
+import {DEFAULT_META, META} from '../constants/metadata'
 import './styles.css'
 
 const calSans = localFont({
@@ -9,13 +10,14 @@ const calSans = localFont({
 	variable: '--font-cal-sans'
 })
 
-export const metadata = {
+export const metadata: Metadata = {
 	alternates: {
 		canonical: '/',
 		languages: {
 			'en-US': '/en-US'
 		}
 	},
+	...DEFAULT_META,
 	metadataBase: new URL(META.siteURL)
 }
 
