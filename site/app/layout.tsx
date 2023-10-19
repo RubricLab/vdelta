@@ -6,7 +6,7 @@ import {DEFAULT_META, META} from '../constants/metadata'
 import './styles.css'
 
 const calSans = localFont({
-	src: '../public/fonts/CalSans-SemiBold.woff2',
+	src: '../public/fonts/CalSans-SemiBold.ttf',
 	variable: '--font-cal-sans'
 })
 

@@ -1,6 +1,5 @@
 import {ImageResponse} from 'next/server'
 import BackgroundGrid from '../components/BackgroundGrid'
-import {FONTS} from '../constants/fonts'
 
 export const runtime = 'edge'
 
@@ -15,8 +14,10 @@ type Props = {
 	params: object
 }
 
-export default async function Image({params}: Props) {
-	console.log('Path params: ', params)
+export default async function Image({}: Props) {
+	const font = fetch(
+		new URL('../public/fonts/CalSans-SemiBold.ttf', import.meta.url)
+	).then(res => res.arrayBuffer())
 
 	return new ImageResponse(
 		(
@@ -38,7 +39,7 @@ export default async function Image({params}: Props) {
 						width: size.width
 					}}
 				/>
-				<div style={{fontSize: 128}}>vdelta</div>
+				<div style={{fontSize: 128}}>v𝚫</div>
 				<div style={{color: 'white', fontSize: 48}}>Built with Rubric.</div>
 			</div>
 		),
@@ -46,7 +47,7 @@ export default async function Image({params}: Props) {
 			...size,
 			fonts: [
 				{
-					data: await (await fetch(FONTS.calSansURL)).arrayBuffer(),
+					data: await font,
 					name: 'cal-sans'
 				}
 			]
