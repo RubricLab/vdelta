@@ -33,3 +33,8 @@ dist/
 .tsbuildinfo
 keys.json
 key.json
+
+# web
+site/node_modules
+site/.env
+site/.next
