@@ -39,7 +39,7 @@ export default async function Image({}: Props) {
 						width: size.width
 					}}
 				/>
-				<div style={{fontSize: 128}}>v𝚫</div>
+				<div style={{color: 'white', fontSize: 128}}>v𝚫</div>
 				<div style={{color: 'white', fontSize: 48}}>Built with Rubric.</div>
 			</div>
 		),
