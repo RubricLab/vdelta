@@ -1,6 +1,5 @@
 {
   "name": "vdelta",
-  "displayName": "Vdelta",
   "version": "0.0.1",
   "description": "Visualize your build logs.",
   "author": "Ted Spare <ted.spare@gmail.com>",
