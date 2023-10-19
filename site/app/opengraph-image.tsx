@@ -1,4 +1,5 @@
 import {ImageResponse} from 'next/server'
+import BackgroundGrid from '../components/BackgroundGrid'
 
 export const runtime = 'edge'
 
@@ -32,6 +33,12 @@ export default async function Image({}: Props) {
 					position: 'relative',
 					width: '100%'
 				}}>
+				<BackgroundGrid
+					style={{
+						position: 'absolute',
+						width: size.width
+					}}
+				/>
 				<div style={{color: 'white', fontSize: 128}}>v𝚫</div>
 				<div style={{color: 'white', fontSize: 48}}>Built with Rubric.</div>
 			</div>
