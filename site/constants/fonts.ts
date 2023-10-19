@@ -1,3 +1,3 @@
 export const FONTS = {
-	calSansURL: 'https://rubriclab.com/fonts/CalSans-SemiBold.woff2'
+	calSansURL: 'https://vdelta.rubric.sh/fonts/CalSans-SemiBold.woff2'
 }
