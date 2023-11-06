@@ -16,7 +16,7 @@ export default async function Home() {
 				<p className='mb-9 text-3xl font-extralight sm:text-6xl md:text-5xl'>
 					Visualize your Vercel build logs.
 				</p>
-				<Link href='https://chrome.google.com/webstore/detail/eopaemjhhlglgcdeeincohklolojdock/preview'>
+				<Link href='https://chromewebstore.google.com/detail/vdelta/eopaemjhhlglgcdeeincohklolojdock'>
 					<button className='rounded-md bg-black px-6 py-3 text-white opacity-100'>
 						Install on Chrome
 					</button>
